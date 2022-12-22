@@ -1,74 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-:root {
-  --body-color: #fff;
-  --basic-font: 16px, sans-serif;
-}
-
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html, body {
-  font: var(--basic-font);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 0;
-  padding: 0;
-  background: var(--body-color);
+a {
+  text-decoration: none;
 }
 
-.main {
-  flex: 1 0;
-}
-
-ul, ol, li {
+ol, ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  display: block;
-  color: #000;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  font-style: normal;
-}
-
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 1170px;
   margin: 0 auto;
 }
 
 .container {
+  margin: 0 auto;
+  padding: 0 15px;
   width: 1200px;
-  padding: 45px;
+}
+
+.container {
+  width: 1200px;
   background-color: #EDF2EC;
 }
 
-.header {
-  position: absolute;
-  width: 100%;
-  display: grid;
-}
-
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navStart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navStart__icon {
   height: 40%;
@@ -82,8 +63,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Inika", sans-serif;
+  color: black;
   font-style: Regular;
   font-weight: 400;
   font-size: 16px;
@@ -95,4 +79,73 @@ h1, h2, h3, h4, h5, h6, p {
 
 .nav__item {
   padding: 45px;
+}
+
+.generalInfo {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EDF2EC;
+}
+.generalInfo__image {
+  padding: 0 0 25px 25px;
+  width: 100%;
+}
+.generalInfo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25px;
+}
+.generalInfo__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+}
+.generalInfo__titleGreen {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #499A18;
+}
+.generalInfo__subtitle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+}
+.generalInfo__btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #E06733;
+}
+.generalInfo__btn :hover {
+  cursor: pointer;
+  color: #636060;
+}
+.generalInfo__btn-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  display: contents;
 }/*# sourceMappingURL=main.css.map */

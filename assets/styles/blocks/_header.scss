@@ -1,15 +1,7 @@
 .container {
     width: 1200px;
-    padding: 45px;
     background-color:#EDF2EC;
 }
-
-.header {
-    position: absolute;
-    width: 100%;
-    display: grid;
-}
-
 
 .nav {
     display: flex;
@@ -19,6 +11,7 @@
 
 .navStart {
     display: flex;
+    align-items:center;
 
     &__icon {
         height: 40%;
@@ -36,6 +29,7 @@
 .nav-list {
     display: flex;
     font-family: $fontInika;
+    color: black;
     font-style: Regular;
     font-weight: 400;
     font-size: 16px;
