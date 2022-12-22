@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --body-color: #fff;
+  --basic-font: 16px, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font: var(--basic-font);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  background: var(--body-color);
+}
+
+.main {
+  flex: 1 0;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 45px;
+  background-color: #EDF2EC;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: grid;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navStart {
+  display: flex;
+}
+.navStart__icon {
+  height: 40%;
+}
+.navStart__name {
+  font-family: "Inika", sans-serif;
+  font-style: Regular;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.nav-list {
+  display: flex;
+  font-family: "Inika", sans-serif;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.nav-list :hover {
+  color: #c43025;
+}
+
+.nav__item {
+  padding: 45px;
+}/*# sourceMappingURL=main.css.map */

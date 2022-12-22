@@ -1,0 +1,50 @@
+.container {
+    width: 1200px;
+    padding: 45px;
+    background-color:#EDF2EC;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    display: grid;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navStart {
+    display: flex;
+
+    &__icon {
+        height: 40%;
+    }
+
+    &__name {
+        font-family: $fontInika;
+        font-style: Regular;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+.nav-list {
+    display: flex;
+    font-family: $fontInika;
+    font-style: Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    :hover {
+        color: #c43025;
+    }
+}
+.nav__item {
+    padding: 45px;
+}
+
