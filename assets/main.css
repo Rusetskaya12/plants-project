@@ -8,16 +8,7 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 ol, ul, li {
-=======
-.main {
-  flex: 1 0;
-}
-
-
-ul, ol, li {
->>>>>>> 30dc0abe468b2ac0b2eaf7cb877139ce9d7bf0d3
   list-style: none;
   padding: 0;
   margin: 0;
