@@ -1,0 +1,40 @@
+.aboutUs {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    &-info {
+        margin: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 70px;
+    }
+
+    &-info__title {
+        font-family: $fontInika;
+        font-size: 40px;
+        line-height: 52px;
+        color: #499A18;
+    }
+
+    &-info__titleOrange {
+        font-family: $fontInika;
+        font-size: 40px;
+        line-height: 52px;
+        color: #E06733;
+    }
+
+    &-info__subtitle {
+        font-family: $fontInter;
+        font-size: 20px;
+        line-height: 30px;
+        color: #636060;
+    }
+
+    &-info__image {
+        display: flex;
+        align-items:center;
+    }
+}

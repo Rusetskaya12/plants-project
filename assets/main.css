@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -32,24 +31,14 @@ ol, ul, li {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navStart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .navStart__icon {
   height: 40%;
@@ -63,8 +52,6 @@ ol, ul, li {
 }
 
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: "Inika", sans-serif;
   color: black;
@@ -84,8 +71,6 @@ ol, ul, li {
 .generalInfo {
   width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #EDF2EC;
 }
@@ -94,16 +79,9 @@ ol, ul, li {
   width: 100%;
 }
 .generalInfo__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 25px;
 }
 .generalInfo__title {
@@ -148,4 +126,228 @@ ol, ul, li {
   line-height: 20px;
   color: #000000;
   display: contents;
+}
+
+.aboutUs {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.aboutUs-info {
+  margin: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px;
+}
+.aboutUs-info__title {
+  font-family: "Inika", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+.aboutUs-info__titleOrange {
+  font-family: "Inika", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #E06733;
+}
+.aboutUs-info__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+.aboutUs-info__image {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #EDF2EC;
+}
+.service-info {
+  display: flex;
+  align-items: center;
+}
+.service-name__title {
+  padding: 45px;
+  font-family: "Inika", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  width: 40%;
+}
+.service-image__firstBlock {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 35px;
+}
+.service-image__secondBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.service-image__gardenCare-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__gardenCare-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__gardenCare {
+  display: block;
+}
+.service-image__info {
+  border: 1px solid #E3E1D5;
+  border-radius: 0 0 15px 15px;
+}
+.service-image__planting {
+  display: block;
+}
+.service-image__planting-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__planting-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__planting {
+  display: block;
+}
+.service-image__planting-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__planting-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__lawnCare {
+  display: block;
+}
+.service-image__lawnCare-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__lawnCare-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__plantingFlowers {
+  display: block;
+}
+.service-image__plantingFlowers-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__plantingFlowers-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__gardenCareCactus {
+  display: block;
+}
+.service-image__gardenCareCactus-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__gardenCareCactus-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+.service-image__plantingCactus {
+  display: block;
+}
+.service-image__plantingCactus-title {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  color: #E06733;
+  text-align: center;
+}
+.service-image__plantingCactus-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+
+.btn__gardens {
+  margin: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  color: #E06733;
+  cursor: pointer;
+}
+
+.btn__gardens:hover {
+  background-color: #ddcdc6;
+  color: #636060;
+}
+
+.btn__lawn {
+  margin: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  color: #E06733;
+  cursor: pointer;
+}
+
+.btn__lawn:hover {
+  background-color: #ddcdc6;
+  color: #636060;
+}
+
+.btn__planting {
+  margin: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  color: #E06733;
+  cursor: pointer;
+}
+
+.btn__planting:hover {
+  background-color: #ddcdc6;
+  color: #636060;
 }/*# sourceMappingURL=main.css.map */

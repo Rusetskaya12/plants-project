@@ -1,0 +1,202 @@
+.service {
+    width: 1200px;
+    margin: 0 auto;
+    background-color:#EDF2EC;
+
+    &-info {
+        display: flex;
+        align-items:center;
+    }
+
+    &-name__title {
+        padding: 45px;
+        font-family: $fontInika;
+        font-size: 40px;
+        line-height: 52px;
+        color: #499A18;
+        width: 40%;
+    }
+
+    &-image__firstBlock {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 35px;
+    }
+    &-image__secondBlock {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-image__gardenCare-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+
+    &-image__gardenCare-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+
+    &-image__gardenCare {
+        display: block;
+    }
+
+    &-image__info {
+        border: 1px solid #E3E1D5;
+        border-radius: 0 0 15px 15px;
+    }
+    &-image__planting {
+        display: block;
+    }
+
+    &-image__planting-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__planting-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+    &-image__planting {
+        display: block;
+    }
+
+    &-image__planting-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__planting-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+    
+    &-image__lawnCare {
+        display: block;
+    }
+
+    &-image__lawnCare-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__lawnCare-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+
+    &-image__plantingFlowers {
+        display: block;
+    }
+
+    &-image__plantingFlowers-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__plantingFlowers-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+
+    &-image__gardenCareCactus {
+        display: block;
+    }
+
+    &-image__gardenCareCactus-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__gardenCareCactus-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+
+    &-image__plantingCactus {
+        display: block;
+    }
+
+    &-image__plantingCactus-title {
+        font-family: $fontInter;
+        font-style: bold;
+        font-size: 20px;
+        color: #E06733;
+        text-align: center;
+    }
+    &-image__plantingCactus-subtitle {
+        font-family: $fontInter;
+        font-size: 16px;
+        color: #717171;
+        text-align: center;
+    }
+
+}
+
+.btn__gardens {
+    margin: 20px;
+    width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #E06733;
+    color: #E06733;
+    cursor: pointer;
+    }
+.btn__gardens:hover {
+    background-color: #ddcdc6;
+    color: #636060;
+}
+
+.btn__lawn {
+    margin: 20px;
+    width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #E06733;
+    color: #E06733;
+    cursor: pointer;
+}
+.btn__lawn:hover {
+    background-color: #ddcdc6;
+    color: #636060;
+}
+
+.btn__planting {
+    margin: 20px;
+    width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #E06733;
+    color: #E06733;
+    cursor: pointer;
+}
+.btn__planting:hover {
+    background-color: #ddcdc6;
+    color: #636060;
+}
+
