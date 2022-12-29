@@ -1,0 +1,23 @@
+.prices {
+	width: 1200px;
+	margin: 0 auto;
+
+	&__allInfo {
+		display: flex;
+		margin: 35px 55px;
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+
+		&__title {
+			font-family: $fontInter;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 48px;
+			color: #000000;
+		}
+	}
+}

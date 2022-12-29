@@ -130,5 +130,102 @@
         </div>
         </div>
     </div>
+    <div class="prices">
+        <div class="prices__allInfo">
+        <div class="prices-info">
+            <div class="prices-infoTitle">
+                <p class="prices-info__title">Prices</p>
+            </div>
+
+            <div class="prices-info__list">
+                <div class="prices-info__item">
+                    <div class="prices-info__title">
+                        <div class="prices-info__title-inner">
+                            Basics
+                        </div>
+                    </div>
+                    <div class="prices-info__body">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="prices-info__list">
+                    <div class="prices-info__item">
+                        <div class="prices-info__title">
+                            <div class="prices-info__title-inner">
+                                Standard
+                            </div>
+                        </div>
+                        <div class="prices-info__body">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                    <div class="prices-info__list">
+                        <div class="prices-info__item">
+                            <div class="prices-info__title">
+                                <div class="prices-info__title-inner">
+                                    Pro care
+                                </div>
+                            </div>
+                            <div class="prices-info__body">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                        <div class="prices-info__showAll">
+                            <div class="prices-info__title">
+                                <div class="prices-info__title-inner show_all">
+                                    Смотреть все
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                <!-- <button id="1">Toggle</button>
+                <p class="prices-info__tableOpenTitle">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="prices-info__tableOpenPrice">$15 / per hour</p>
+                <button class="prices-info__tableOpenBtn">Order</button>
+                </div>
+
+                <button class="table__item">Standard</button>
+                <div id="myDropdown" class="table__content">
+                    <a href="#">15$</a>
+                    <a href="#">20$</a>
+                    <a href="#">25$</a>
+                </div>
+
+                <button class="table__item">Pro care</button>
+                <div id="myDropdown" class="table__content">
+                    <a href="#">15$</a>
+                    <a href="#">20$</a>
+                    <a href="#">25$</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="praces-help">
+            <p class="praces-help__title">Our best <span class="praces-help__titleGreen"> gardeners </span> are ready to help you</p>
+            <button class="praces-help__btn">Contact us</button>
+            <img class="praces-help__image" src="/assets/icons/praces-leaf.png" alt="leaf">
+            <img class="praces-help__image" src="/assets/icons/praces-leaf2.png" alt="leaf">
+            <img class="praces-help__image" src="/assets/icons/praces-leaf3.png" alt="leaf">
+            <img class="praces-help__image" src="/assets/icons/praces-leaf4.png" alt="leaf">
+        </div>
+    </div>
+</div>
+
+<script>
+$('.prices-info__title-inner').on('click',function(){
+	$(this).parents('.prices-info').find('.prices-info__body').slideToggle(300);
+	$(this).toggleClass('open');
+	if ($(this).hasClass('show_all')){
+			if ($(this).hasClass('open')) {
+				$(this).html('Свернуть все');
+			$('.prices-info__title-inner:not(.open)').trigger('click');
+		} else {
+			$(this).html('Смотреть все');
+			$('.prices-info__title-inner.open').trigger('click');
+		}
+	}
+});
+</script>
 </body>
 </html>

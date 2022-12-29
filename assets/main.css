@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -31,14 +32,24 @@ ol, ul, li {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navStart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navStart__icon {
   height: 40%;
@@ -52,6 +63,8 @@ ol, ul, li {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Inika", sans-serif;
   color: black;
@@ -71,6 +84,8 @@ ol, ul, li {
 .generalInfo {
   width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #EDF2EC;
 }
@@ -79,9 +94,16 @@ ol, ul, li {
   width: 100%;
 }
 .generalInfo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 25px;
 }
 .generalInfo__title {
@@ -131,14 +153,25 @@ ol, ul, li {
 .aboutUs {
   width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .aboutUs-info {
   margin: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 70px;
 }
 .aboutUs-info__title {
@@ -160,18 +193,27 @@ ol, ul, li {
   color: #636060;
 }
 .aboutUs-info__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .service {
   width: 1200px;
   margin: 0 auto;
   background-color: #EDF2EC;
+  padding: 50px 20px;
 }
 .service-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .service-name__title {
   padding: 45px;
@@ -182,13 +224,19 @@ ol, ul, li {
   width: 40%;
 }
 .service-image__firstBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 0 35px;
 }
 .service-image__secondBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .service-image__gardenCare-title {
   font-family: "Inter", sans-serif;
@@ -350,4 +398,32 @@ ol, ul, li {
 .btn__planting:hover {
   background-color: #ddcdc6;
   color: #636060;
+}
+
+.prices {
+  width: 1200px;
+  margin: 0 auto;
+}
+.prices__allInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 35px 55px;
+}
+.prices-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.prices-info__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
