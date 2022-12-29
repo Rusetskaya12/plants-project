@@ -1,14 +1,15 @@
 "use strict"
-$('.prices-info__title-inner').on('click',function(){
-	$(this).parents('.prices-info').find('.prices-info__body').slideToggle(300);
-	$(this).toggleClass('open');
-	if ($(this).hasClass('show_all')){
-			if ($(this).hasClass('open')) {
-				$(this).html('Свернуть все');
-			$('.prices-info__title-inner:not(.open)').trigger('click');
+let acc = document.getElementsByClassName ("prices-info__accordion");
+let i;
+
+for (i=0; i< acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		let panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+			panel.style.display = "none";
 		} else {
-			$(this).html('Смотреть все');
-			$('.prices-info__title-inner.open').trigger('click');
+			panel.style.display = "block";
 		}
-	}
-});
+	});
+}

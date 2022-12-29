@@ -400,15 +400,33 @@ ol, ul, li {
   color: #636060;
 }
 
+.prices-info__separator {
+  border: 0.5px solid #AEA1A1;
+}
+
 .prices {
   width: 1200px;
   margin: 0 auto;
+}
+.prices-help {
+  margin: 30px;
+}
+.prices-help__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
 }
 .prices__allInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 35px 55px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .prices-info {
   display: -webkit-box;
@@ -418,6 +436,45 @@ ol, ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 30px;
+}
+.prices-info__btn {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #717171;
+  cursor: pointer;
+}
+.prices-info__prices {
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+.prices-info__text-input {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+}
+.prices-info__price {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+}
+.prices-info__priceOrange {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E06733;
 }
 .prices-info__title {
   font-family: "Inter", sans-serif;
@@ -426,4 +483,138 @@ ol, ul, li {
   font-size: 40px;
   line-height: 48px;
   color: #000000;
+  text-transform: capitalize;
+}
+
+.prices-info__list {
+  position: relative;
+  color: #192430;
+}
+
+.prices-info__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 8px solid #a2adb6;
+  padding: 10px 0 10px 15px;
+}
+
+.prices-info__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.prices-info__body {
+  font-size: 16px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+}
+
+.prices-info__accordion {
+  background-color: #EDF2EC;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 25px;
+}
+
+.active, .prices-info__accordion:hover {
+  background-color: #EDF2EC;
+}
+
+.panel {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #D6E7D2;
+  margin: 15px;
+  border-radius: 25px;
+  width: 350px;
+  height: 130px;
+}
+
+.accordion__basics {
+  width: 400px;
+  border: 1px solid #EDF2EC;
+  margin: 20px;
+  border: none;
+}
+
+.accordion__standart {
+  width: 400px;
+  border: 1px solid #EDF2EC;
+  margin: 20px;
+  border: none;
+}
+
+.accordion__pro {
+  width: 400px;
+  border: 1px solid #EDF2EC;
+  margin: 20px;
+  border: none;
+}
+
+.prices-info__separator {
+  border: 0.5px solid #AEA1A1;
+  margin: 15px;
+}
+
+.prices-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.prices-help__btn {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  font-family: "Inika", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #E06733;
+  cursor: pointer;
+}
+.prices-help__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+
+.praces-help__titleGreen {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: rgb(73, 154, 24);
 }/*# sourceMappingURL=main.css.map */
