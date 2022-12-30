@@ -13,3 +13,7 @@ for (i=0; i< acc.length; i++) {
 		}
 	});
 }
+
+let select = document.querySelector("#select");
+select.addEventListener("chenge", function() {
+})
