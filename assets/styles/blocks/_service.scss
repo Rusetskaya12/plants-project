@@ -2,6 +2,7 @@
     width: 1200px;
     margin: 0 auto;
     background-color:#EDF2EC;
+    padding: 50px 20px;
 
     &-info {
         display: flex;
@@ -172,7 +173,6 @@
     color: #636060;
 }
 
-
 .btn__lawn {
     margin: 20px;
     width: 120px;
@@ -201,3 +201,6 @@
     color: #636060;
 }
 
+.prices-info__separator {
+    border: 0.5px solid #AEA1A1;
+}
