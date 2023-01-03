@@ -20,6 +20,10 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 0 25px;
+
+		@include mediaTablet {
+			margin: 40px;
+		}
 	}
 
 	&__title {
@@ -29,6 +33,10 @@
 		font-size: 45px;
 		line-height: 50px;
 		color:#717171;
+
+		@include mediaTablet {
+			width: 450px;
+		}
 	}
 
 	&__titleGreen {
@@ -47,6 +55,10 @@
 		font-size: 20px;
 		line-height: 35px;
 		color:#636060;
+
+		@include mediaTablet {
+			width: 350px;
+		}
 	}
 
 	&__btn {

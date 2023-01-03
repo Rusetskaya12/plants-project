@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -26,9 +27,15 @@ ol, ul, li {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 1199px) {
   .nav {
@@ -37,8 +44,12 @@ ol, ul, li {
 }
 
 .navStart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navStart__icon {
   height: 40%;
@@ -52,6 +63,8 @@ ol, ul, li {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Inika", sans-serif;
   color: #010201;
@@ -71,13 +84,20 @@ ol, ul, li {
 .generalInfo {
   width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #EDF2EC;
 }
 @media screen and (max-width: 1199px) {
   .generalInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 .generalInfo__image {
@@ -85,10 +105,22 @@ ol, ul, li {
   width: 100%;
 }
 .generalInfo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 25px;
+}
+@media screen and (max-width: 1199px) {
+  .generalInfo__text {
+    margin: 40px;
+  }
 }
 .generalInfo__title {
   font-family: "Inter", sans-serif;
@@ -97,6 +129,11 @@ ol, ul, li {
   font-size: 45px;
   line-height: 50px;
   color: #717171;
+}
+@media screen and (max-width: 1199px) {
+  .generalInfo__title {
+    width: 450px;
+  }
 }
 .generalInfo__titleGreen {
   font-family: "Inter", sans-serif;
@@ -113,6 +150,11 @@ ol, ul, li {
   font-size: 20px;
   line-height: 35px;
   color: #636060;
+}
+@media screen and (max-width: 1199px) {
+  .generalInfo__subtitle {
+    width: 350px;
+  }
 }
 .generalInfo__btn {
   width: 150px;
@@ -137,21 +179,59 @@ ol, ul, li {
 .aboutUs {
   width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .aboutUs-info {
   margin: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 70px;
+}
+@media screen and (max-width: 1199px) {
+  .aboutUs-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .aboutUs-info__title {
   font-family: "Inika", sans-serif;
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
+}
+@media screen and (max-width: 1199px) {
+  .aboutUs-info__title {
+    width: 550px;
+    text-align: center;
+  }
 }
 .aboutUs-info__titleOrange {
   font-family: "Inika", sans-serif;
@@ -165,9 +245,40 @@ ol, ul, li {
   line-height: 30px;
   color: #636060;
 }
+@media screen and (max-width: 1199px) {
+  .aboutUs-info__subtitle {
+    padding: 0 100px;
+  }
+}
 .aboutUs-info__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .aboutUs-info__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .aboutUs-info__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 0;
+  }
 }
 
 .service {
@@ -176,26 +287,71 @@ ol, ul, li {
   background-color: #EDF2EC;
   padding: 50px 20px;
 }
+@media screen and (max-width: 1199px) {
+  .service {
+    padding: 10px 25px;
+  }
+}
 .service-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .service-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .service-name__title {
   padding: 45px;
   font-family: "Inika", sans-serif;
   font-size: 40px;
-  line-height: 52px;
   color: #499A18;
   width: 40%;
 }
+@media screen and (max-width: 1199px) {
+  .service-name__title {
+    padding: 0 45px 0 0;
+  }
+}
+.service-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .service-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px;
+  }
+}
 .service-image__firstBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 0 35px;
 }
 .service-image__secondBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .service-image__gardenCare-title {
   font-family: "Inter", sans-serif;
@@ -213,9 +369,14 @@ ol, ul, li {
 .service-image__gardenCare {
   display: block;
 }
+.service-image__gardenCare-item {
+  padding: 0 0 40px;
+}
 .service-image__info {
   border: 1px solid #E3E1D5;
   border-radius: 0 0 15px 15px;
+  display: inline-block;
+  width: 330px;
 }
 .service-image__planting {
   display: block;
@@ -235,6 +396,9 @@ ol, ul, li {
 }
 .service-image__planting {
   display: block;
+}
+.service-image__planting-item {
+  padding: 0 0 40px;
 }
 .service-image__planting-title {
   font-family: "Inter", sans-serif;
@@ -251,6 +415,9 @@ ol, ul, li {
 }
 .service-image__lawnCare {
   display: block;
+}
+.service-image__lawnCare-item {
+  padding: 0 0 40px;
 }
 .service-image__lawnCare-title {
   font-family: "Inter", sans-serif;
@@ -359,10 +526,6 @@ ol, ul, li {
   color: #636060;
 }
 
-.prices-info__separator {
-  border: 0.5px solid #AEA1A1;
-}
-
 .prices {
   width: 1200px;
   margin: 0 auto;
@@ -380,12 +543,21 @@ ol, ul, li {
   color: #000000;
 }
 .prices__allInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .prices-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 30px;
 }
 .prices-info__btn {
@@ -442,13 +614,15 @@ ol, ul, li {
 }
 
 .prices-info__item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-left: 8px solid #a2adb6;
   padding: 10px 0 10px 15px;
 }
 
 .prices-info__title {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 20px;
   text-transform: uppercase;
   position: relative;
@@ -457,7 +631,8 @@ ol, ul, li {
 .prices-info__body {
   font-size: 16px;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: none;
 }
 
@@ -469,6 +644,7 @@ ol, ul, li {
   width: 100%;
   border: none;
   text-align: left;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -519,9 +695,16 @@ ol, ul, li {
 }
 
 .prices-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .prices-help__btn {
   border: 1px solid #E06733;
@@ -561,6 +744,8 @@ ol, ul, li {
 .contact {
   width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #EDF2EC;
 }
@@ -568,8 +753,13 @@ ol, ul, li {
   padding: 80px 80px 0;
 }
 .contact__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .contact__city-select {
   padding-left: 150px;
@@ -582,7 +772,9 @@ ol, ul, li {
   font-family: "Inter", sans-serif;
   font-style: regular;
   font-size: 20px;
-  align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   color: #717171;
 }
 .contact__city-name {
@@ -590,19 +782,29 @@ ol, ul, li {
   font-family: "Inika", sans-serif;
   font-style: bold;
   font-size: 40px;
-  align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   color: #499A18;
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 1200px;
   margin: 0 auto;
 }
 .footer__yearInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Inter", sans-serif;
   font-style: regular;
   font-size: 20px;
@@ -615,21 +817,33 @@ ol, ul, li {
   padding: 15px;
 }
 .footer__school {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Inter", sans-serif;
   font-style: regular;
   font-size: 20px;
   color: #000000;
 }
 .footer__mess {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__mess-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer__mess-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 15px;
 }/*# sourceMappingURL=main.css.map */

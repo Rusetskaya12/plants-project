@@ -3,13 +3,23 @@
     margin: 0 auto;
     display: flex;
 
+    @include mediaTablet {
+        display: flex;
+        flex-direction: column;
+    }
+
     &-info {
         margin: 45px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 70px;
+        padding: 0 70px;
+
+        @include mediaTablet {
+            display: flex;
+            align-items:center;
+        }
     }
 
     &-info__title {
@@ -17,6 +27,11 @@
         font-size: 40px;
         line-height: 52px;
         color: #499A18;
+
+        @include mediaTablet {
+            width: 550px;
+            text-align: center;
+        }
     }
 
     &-info__titleOrange {
@@ -31,10 +46,28 @@
         font-size: 20px;
         line-height: 30px;
         color: #636060;
+
+        @include mediaTablet {
+            padding: 0 100px;
+        }
     }
 
     &-info__image {
         display: flex;
         align-items:center;
+
+        @include mediaTablet {
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+        }
+    }
+
+    &-info__img {
+        @include mediaTablet {
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+        }
     }
 }
