@@ -15,11 +15,6 @@ ol, ul, li {
 }
 
 .container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.container {
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
@@ -34,6 +29,11 @@ ol, ul, li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  .nav {
+    padding: 40px;
+  }
 }
 
 .navStart {
@@ -54,7 +54,7 @@ ol, ul, li {
 .nav-list {
   display: flex;
   font-family: "Inika", sans-serif;
-  color: black;
+  color: #010201;
   font-style: Regular;
   font-weight: 400;
   font-size: 16px;
@@ -73,6 +73,12 @@ ol, ul, li {
   margin: 0 auto;
   display: flex;
   background-color: #EDF2EC;
+}
+@media screen and (max-width: 1199px) {
+  .generalInfo {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .generalInfo__image {
   padding: 0 0 25px 25px;

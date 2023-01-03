@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mediaTablet {
+        padding: 40px;
+    }
 }
 
 .navStart {
@@ -29,7 +33,7 @@
 .nav-list {
     display: flex;
     font-family: $fontInika;
-    color: black;
+    color: #010201;
     font-style: Regular;
     font-weight: 400;
     font-size: 16px;

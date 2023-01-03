@@ -1,6 +1,7 @@
 @import './styles/fonts';
 @import './styles/vars';
 @import './styles/abjusments';
+@import "./styles/mixins";
 
 // components
 @import "./styles/blocks/header";
@@ -10,5 +11,6 @@
 @import "./styles/blocks/prices";
 @import "./styles/blocks/contact";
 @import "./styles/blocks/footer";
+
 
 

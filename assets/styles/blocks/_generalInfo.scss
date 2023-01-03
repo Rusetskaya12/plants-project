@@ -4,6 +4,12 @@
 	display: flex;
 	background-color: #EDF2EC;
 
+	@include mediaTablet {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	
+
 	&__image {
 		padding: 0 0 25px 25px;
 		width: 100%;
@@ -63,5 +69,5 @@
 		color:#000000;
 		display: contents;
 	}
-}
 
+};
