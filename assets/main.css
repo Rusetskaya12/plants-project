@@ -591,4 +591,39 @@ ol, ul, li {
 .footer {
   display: flex;
   justify-content: space-evenly;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer__yearInfo {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: regular;
+  font-size: 20px;
+  color: #000000;
+}
+.footer__copywriter {
+  padding: 15px;
+}
+.footer__year {
+  padding: 15px;
+}
+.footer__school {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: regular;
+  font-size: 20px;
+  color: #000000;
+}
+.footer__mess {
+  display: flex;
+  align-items: center;
+}
+.footer__mess-icon {
+  display: flex;
+}
+.footer__mess-item {
+  display: flex;
+  padding: 15px;
 }/*# sourceMappingURL=main.css.map */

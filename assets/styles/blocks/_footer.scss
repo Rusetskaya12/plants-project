@@ -1,6 +1,42 @@
 .footer {
     display: flex;
     justify-content: space-evenly;
+    width: 1200px;
+    margin: 0 auto;
 
-    &__
+    &__yearInfo {
+        display: flex;
+        align-items: center;
+        font-family: $fontInter;
+        font-style: regular;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    &__copywriter {
+        padding: 15px;
+    }
+    &__year {
+        padding: 15px;
+    }
+    &__school {
+        display: flex;
+        align-items:center;
+        font-family: $fontInter;
+        font-style: regular;
+        font-size: 20px;
+        color: #000000;
+    }
+    &__mess {
+        display: flex;
+        align-items:center;
+
+        &-icon {
+            display: flex;
+        }
+        &-item {
+            display: flex;
+            padding: 15px;
+        }
+    }
 }
